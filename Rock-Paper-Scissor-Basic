@@ -1,0 +1,40 @@
+import random
+a="you"
+b="comp"
+you=input( "Select 'rock','paper','scissor'")
+print(you)
+
+r=random.randint(1,3)
+if r==1:
+	comp='rock'
+if r==2:
+	comp='paper'
+if r==3:
+	comp='scissor'
+else:
+	exit()
+print(comp)
+
+if you == 'scissor':
+	if comp=='paper':
+		print("you win")
+	elif comp=='rock':
+		print("computer wins")
+	else:
+		print("Its a tie")
+		
+if you == 'paper':
+	if comp=='rock':
+		print("you win")
+	elif comp=='scissor':
+		print("computer wins")
+	else:
+		print("Its a tie") 
+	
+if you == 'rock':
+	if comp=='paper':
+		print("you win")
+	elif comp=='scissor':
+		print("computer wins")
+	else:
+		print("Its a tie")
