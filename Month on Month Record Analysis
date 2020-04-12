@@ -1,0 +1,27 @@
+Problem Statement: Analysis of the customer data 
+    
+What is available 
+1. There are two files generated for the months of January 2019 and Feb 2019
+2. The files have the following elements:- Customer ID ,Customer First Name , Customer Last  Name,  Zip Code, Amount Outstanding , Account Status , Last Payment Date
+    
+The following report needs to be generated
+1. Total number of Customers
+2. Identify the new customers
+3. Total Amount outstanding
+4. Count of Customers whose payments are delayed more than 30+ days and < 59 days
+5. Count of Customers whose payments are delayed more than 60+ days and <89 days
+6. Count of Customers whose payments are delayed more than 90+ days
+7. Top Ten Zipcodes with Max default
+
+As part of the analysis the following Organizational Data Quality Standards needs to be validated
+1. Consistency
+    a. Count of records differences in the customer data from the previous month file
+2. Accuracy
+    a. With Customer ID as PK the Customer data must be accurate.
+    b. If any of the customer related data is missing in the Feb file append the customer data based on Jan file
+3. Completeness
+4. Timeleness
+
+Note:-
+    1. All the inconsistent records needs to be logged and published in a CSV file. The file name should be <DD-MM-YY>-DQException-Records.csv
+    2. All the Outstandign amount must be rounded off to nearest whole number.
